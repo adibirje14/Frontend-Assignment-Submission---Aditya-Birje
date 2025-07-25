@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Weather Chat App
+
+A responsive weather chat interface powered by Mastra AI Agent, built using React + Tailwind CSS.
+
+## Features
+
+- Real-time chat interface with streaming weather updates
+- User and agent message bubbles with timestamps
+- Message search
+- Graceful error handling
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js (v18+ recommended)
+- npm or yarn
+
+### Installation
+
+git clone https://github.com/adibirje14/weather-chat.git
+cd weather-chat
+npm install
+# or
+yarn install
+
+# For Running the App: 
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# API Endpoint: 
+POST https://millions-screeching-vultur.mastra.cloud/api/agents/weatherAgent/stream
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Folder Structure
+components/ChatWindow.tsx: Main chat interface
+styles/global.css: Custom global and chat styling
 
-## Learn More
+# Testing: 
+Manual test cases:
+-> Query weather for multiple cities
+-> Trigger error by disabling internet
+-> Test search bar 
 
-To learn more about Next.js, take a look at the following resources:
+# To Do / Improvements:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-> Add persistent chat history
+-> Use SWR/WebSocket for real-time sync
+-> Improve mobile layout spacing
+-> Add location-based weather suggestions

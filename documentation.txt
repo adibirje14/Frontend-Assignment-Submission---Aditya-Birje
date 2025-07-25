@@ -1,0 +1,16 @@
+Documentation
+
+1) Approach: 
+-> The app uses a single React component (ChatWindow) to manage all chat logic, message rendering, and agent API interaction. 
+-> Styling is done with Tailwind CSS with custom overrides in global.css.
+-> Key features like search, input control, and streaming agent response were implemented to ensure good UX and accessibility.
+
+2) Assumptions:
+-> Mastra API returns stream data in expected JSON-like chunks.
+-> User expects basic weather data in clear language.
+-> Agent’s formatting will include line breaks and structured lists when prompted correctly.
+
+3) Known Limitations:
+-> Responses depend on how the agent formats the message.
+-> No backend or session persistence — on refresh, all messages are lost.
+-> No WebSocket or auto-refresh updates from API (purely client-initiated).
