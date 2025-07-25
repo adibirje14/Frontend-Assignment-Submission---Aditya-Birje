@@ -18,18 +18,18 @@ A responsive weather chat interface powered by Mastra AI Agent, built using Reac
 
 ### Installation
 
-git clone https://github.com/adibirje14/Frontend-Assignment-Submission---Aditya-Birje.git
-cd weather-chat
-npm install
+-> git clone https://github.com/adibirje14/Frontend-Assignment-Submission---Aditya-Birje.git
+-> cd weather-chat
+-> npm install
 # or
-yarn install
+-> yarn install
 
 # For Running the App: 
 npm run dev
 # or
 yarn dev
 
-Open http://localhost:3000 in your browser.
+-> Open http://localhost:3000 in your browser.
 
 # API Endpoint: 
 POST https://millions-screeching-vultur.mastra.cloud/api/agents/weatherAgent/stream
