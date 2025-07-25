@@ -18,7 +18,7 @@ A responsive weather chat interface powered by Mastra AI Agent, built using Reac
 
 ### Installation
 
-git clone https://github.com/adibirje14/weather-chat.git
+git clone https://github.com/adibirje14/Frontend-Assignment-Submission---Aditya-Birje.git
 cd weather-chat
 npm install
 # or
